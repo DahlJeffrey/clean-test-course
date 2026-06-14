@@ -1,0 +1,75 @@
+Using pip 25.0.1 from /Users/Intre/projects/clean-test-course/backend/hangry_api/env/lib/python3.8/site-packages/pip (python 3.8)
+Collecting PyYAML==6.0
+  Using cached PyYAML-6.0.tar.gz (124 kB)
+  Preparing metadata (pyproject.toml): started
+  Running command Preparing metadata (pyproject.toml)
+  running dist_info
+  creating /private/var/folders/n6/vswcft1n13s6ssf307rs_l1r0000gn/T/pip-modern-metadata-ouoicvky/PyYAML.egg-info
+  writing /private/var/folders/n6/vswcft1n13s6ssf307rs_l1r0000gn/T/pip-modern-metadata-ouoicvky/PyYAML.egg-info/PKG-INFO
+  writing dependency_links to /private/var/folders/n6/vswcft1n13s6ssf307rs_l1r0000gn/T/pip-modern-metadata-ouoicvky/PyYAML.egg-info/dependency_links.txt
+  writing top-level names to /private/var/folders/n6/vswcft1n13s6ssf307rs_l1r0000gn/T/pip-modern-metadata-ouoicvky/PyYAML.egg-info/top_level.txt
+  writing manifest file '/private/var/folders/n6/vswcft1n13s6ssf307rs_l1r0000gn/T/pip-modern-metadata-ouoicvky/PyYAML.egg-info/SOURCES.txt'
+  Traceback (most recent call last):
+    File "/Users/Intre/projects/clean-test-course/backend/hangry_api/env/lib/python3.8/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 389, in <module>
+      main()
+    File "/Users/Intre/projects/clean-test-course/backend/hangry_api/env/lib/python3.8/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 373, in main
+      json_out["return_val"] = hook(**hook_input["kwargs"])
+    File "/Users/Intre/projects/clean-test-course/backend/hangry_api/env/lib/python3.8/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 175, in prepare_metadata_for_build_wheel
+      return hook(metadata_directory, config_settings)
+    File "/Users/Intre/projects/clean-test-course/backend/hangry_api/env/lib/python3.8/site-packages/setuptools/build_meta.py", line 376, in prepare_metadata_for_build_wheel
+      self.run_setup()
+    File "/Users/Intre/projects/clean-test-course/backend/hangry_api/env/lib/python3.8/site-packages/setuptools/build_meta.py", line 319, in run_setup
+      exec(code, locals())
+    File "<string>", line 288, in <module>
+    File "/Users/Intre/projects/clean-test-course/backend/hangry_api/env/lib/python3.8/site-packages/setuptools/__init__.py", line 117, in setup
+      return distutils.core.setup(**attrs)
+    File "/Users/Intre/projects/clean-test-course/backend/hangry_api/env/lib/python3.8/site-packages/setuptools/_distutils/core.py", line 183, in setup
+      return run_commands(dist)
+    File "/Users/Intre/projects/clean-test-course/backend/hangry_api/env/lib/python3.8/site-packages/setuptools/_distutils/core.py", line 199, in run_commands
+      dist.run_commands()
+    File "/Users/Intre/projects/clean-test-course/backend/hangry_api/env/lib/python3.8/site-packages/setuptools/_distutils/dist.py", line 954, in run_commands
+      self.run_command(cmd)
+    File "/Users/Intre/projects/clean-test-course/backend/hangry_api/env/lib/python3.8/site-packages/setuptools/dist.py", line 999, in run_command
+      super().run_command(command)
+    File "/Users/Intre/projects/clean-test-course/backend/hangry_api/env/lib/python3.8/site-packages/setuptools/_distutils/dist.py", line 973, in run_command
+      cmd_obj.run()
+    File "/Users/Intre/projects/clean-test-course/backend/hangry_api/env/lib/python3.8/site-packages/setuptools/command/dist_info.py", line 93, in run
+      self.egg_info.run()
+    File "/Users/Intre/projects/clean-test-course/backend/hangry_api/env/lib/python3.8/site-packages/setuptools/command/egg_info.py", line 312, in run
+      self.find_sources()
+    File "/Users/Intre/projects/clean-test-course/backend/hangry_api/env/lib/python3.8/site-packages/setuptools/command/egg_info.py", line 320, in find_sources
+      mm.run()
+    File "/Users/Intre/projects/clean-test-course/backend/hangry_api/env/lib/python3.8/site-packages/setuptools/command/egg_info.py", line 541, in run
+      self.add_defaults()
+    File "/Users/Intre/projects/clean-test-course/backend/hangry_api/env/lib/python3.8/site-packages/setuptools/command/egg_info.py", line 579, in add_defaults
+      sdist.add_defaults(self)
+    File "/Users/Intre/projects/clean-test-course/backend/hangry_api/env/lib/python3.8/site-packages/setuptools/command/sdist.py", line 109, in add_defaults
+      super().add_defaults()
+    File "/Users/Intre/projects/clean-test-course/backend/hangry_api/env/lib/python3.8/site-packages/setuptools/_distutils/command/sdist.py", line 238, in add_defaults
+      self._add_defaults_ext()
+    File "/Users/Intre/projects/clean-test-course/backend/hangry_api/env/lib/python3.8/site-packages/setuptools/_distutils/command/sdist.py", line 323, in _add_defaults_ext
+      self.filelist.extend(build_ext.get_source_files())
+    File "<string>", line 204, in get_source_files
+    File "/Users/Intre/projects/clean-test-course/backend/hangry_api/env/lib/python3.8/site-packages/setuptools/_distutils/cmd.py", line 107, in __getattr__
+      raise AttributeError(attr)
+  AttributeError: cython_sources
+  error: subprocess-exited-with-error
+  
+  × Preparing metadata (pyproject.toml) did not run successfully.
+  │ exit code: 1
+  ╰─> See above for output.
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+  full command: /Users/Intre/projects/clean-test-course/backend/hangry_api/env/bin/python /Users/Intre/projects/clean-test-course/backend/hangry_api/env/lib/python3.8/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py prepare_metadata_for_build_wheel /var/folders/n6/vswcft1n13s6ssf307rs_l1r0000gn/T/tmp3s0fmdco
+  cwd: /private/var/folders/n6/vswcft1n13s6ssf307rs_l1r0000gn/T/pip-install-hw2w5_7z/pyyaml_6339043be8d74111b08b65cfaf533a5e
+  Preparing metadata (pyproject.toml): finished with status 'error'
+
+[notice] A new release of pip is available: 25.0.1 -> 26.1.2
+[notice] To update, run: pip install --upgrade pip
+error: metadata-generation-failed
+
+× Encountered error while generating package metadata.
+╰─> See above for output.
+
+note: This is an issue with the package mentioned above, not pip.
+hint: See above for details.

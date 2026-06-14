@@ -1,0 +1,96 @@
+Requirement already satisfied: argcomplete==2.0.0 in ./env/lib/python3.8/site-packages (from -r requirements.txt (line 1)) (2.0.0)
+Collecting asgiref==3.5.2 (from -r requirements.txt (line 2))
+  Using cached asgiref-3.5.2-py3-none-any.whl.metadata (9.1 kB)
+Requirement already satisfied: boto3==1.24.26 in ./env/lib/python3.8/site-packages (from -r requirements.txt (line 3)) (1.24.26)
+Requirement already satisfied: botocore==1.27.26 in ./env/lib/python3.8/site-packages (from -r requirements.txt (line 4)) (1.27.26)
+Requirement already satisfied: certifi==2022.6.15 in ./env/lib/python3.8/site-packages (from -r requirements.txt (line 5)) (2022.6.15)
+Requirement already satisfied: cfn-flip==1.3.0 in ./env/lib/python3.8/site-packages (from -r requirements.txt (line 6)) (1.3.0)
+Requirement already satisfied: charset-normalizer==2.1.0 in ./env/lib/python3.8/site-packages (from -r requirements.txt (line 7)) (2.1.0)
+Requirement already satisfied: click==8.1.3 in ./env/lib/python3.8/site-packages (from -r requirements.txt (line 8)) (8.1.3)
+Collecting Django==4.0.6 (from -r requirements.txt (line 9))
+  Using cached Django-4.0.6-py3-none-any.whl.metadata (4.0 kB)
+Requirement already satisfied: django-cors-headers==3.13.0 in ./env/lib/python3.8/site-packages (from -r requirements.txt (line 10)) (3.13.0)
+Requirement already satisfied: djangorestframework==3.13.1 in ./env/lib/python3.8/site-packages (from -r requirements.txt (line 11)) (3.13.1)
+Requirement already satisfied: durationpy==0.5 in ./env/lib/python3.8/site-packages (from -r requirements.txt (line 12)) (0.5)
+Requirement already satisfied: future==0.18.2 in ./env/lib/python3.8/site-packages (from -r requirements.txt (line 13)) (0.18.2)
+Requirement already satisfied: hjson==3.0.2 in ./env/lib/python3.8/site-packages (from -r requirements.txt (line 14)) (3.0.2)
+Requirement already satisfied: idna==3.3 in ./env/lib/python3.8/site-packages (from -r requirements.txt (line 15)) (3.3)
+Requirement already satisfied: jmespath==1.0.1 in ./env/lib/python3.8/site-packages (from -r requirements.txt (line 16)) (1.0.1)
+Requirement already satisfied: kappa==0.6.0 in ./env/lib/python3.8/site-packages (from -r requirements.txt (line 17)) (0.6.0)
+Requirement already satisfied: legacy-cgi==2.6.3 in ./env/lib/python3.8/site-packages (from -r requirements.txt (line 18)) (2.6.3)
+Requirement already satisfied: placebo==0.9.0 in ./env/lib/python3.8/site-packages (from -r requirements.txt (line 19)) (0.9.0)
+Requirement already satisfied: python-dateutil==2.8.2 in ./env/lib/python3.8/site-packages (from -r requirements.txt (line 20)) (2.8.2)
+Requirement already satisfied: python-slugify==6.1.2 in ./env/lib/python3.8/site-packages (from -r requirements.txt (line 21)) (6.1.2)
+Requirement already satisfied: pytz==2022.1 in ./env/lib/python3.8/site-packages (from -r requirements.txt (line 22)) (2022.1)
+Collecting PyYAML==6.0 (from -r requirements.txt (line 23))
+  Using cached PyYAML-6.0.tar.gz (124 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'error'
+  error: subprocess-exited-with-error
+  
+  × Getting requirements to build wheel did not run successfully.
+  │ exit code: 1
+  ╰─> [48 lines of output]
+      running egg_info
+      writing lib/PyYAML.egg-info/PKG-INFO
+      writing dependency_links to lib/PyYAML.egg-info/dependency_links.txt
+      writing top-level names to lib/PyYAML.egg-info/top_level.txt
+      Traceback (most recent call last):
+        File "/Users/Intre/projects/clean-test-course/backend/hangry_api/env/lib/python3.8/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 389, in <module>
+          main()
+        File "/Users/Intre/projects/clean-test-course/backend/hangry_api/env/lib/python3.8/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 373, in main
+          json_out["return_val"] = hook(**hook_input["kwargs"])
+        File "/Users/Intre/projects/clean-test-course/backend/hangry_api/env/lib/python3.8/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 143, in get_requires_for_build_wheel
+          return hook(config_settings)
+        File "/private/var/folders/n6/vswcft1n13s6ssf307rs_l1r0000gn/T/pip-build-env-40gx9ofn/overlay/lib/python3.8/site-packages/setuptools/build_meta.py", line 333, in get_requires_for_build_wheel
+          return self._get_build_requires(config_settings, requirements=[])
+        File "/private/var/folders/n6/vswcft1n13s6ssf307rs_l1r0000gn/T/pip-build-env-40gx9ofn/overlay/lib/python3.8/site-packages/setuptools/build_meta.py", line 303, in _get_build_requires
+          self.run_setup()
+        File "/private/var/folders/n6/vswcft1n13s6ssf307rs_l1r0000gn/T/pip-build-env-40gx9ofn/overlay/lib/python3.8/site-packages/setuptools/build_meta.py", line 319, in run_setup
+          exec(code, locals())
+        File "<string>", line 288, in <module>
+        File "/private/var/folders/n6/vswcft1n13s6ssf307rs_l1r0000gn/T/pip-build-env-40gx9ofn/overlay/lib/python3.8/site-packages/setuptools/__init__.py", line 117, in setup
+          return distutils.core.setup(**attrs)
+        File "/private/var/folders/n6/vswcft1n13s6ssf307rs_l1r0000gn/T/pip-build-env-40gx9ofn/overlay/lib/python3.8/site-packages/setuptools/_distutils/core.py", line 183, in setup
+          return run_commands(dist)
+        File "/private/var/folders/n6/vswcft1n13s6ssf307rs_l1r0000gn/T/pip-build-env-40gx9ofn/overlay/lib/python3.8/site-packages/setuptools/_distutils/core.py", line 199, in run_commands
+          dist.run_commands()
+        File "/private/var/folders/n6/vswcft1n13s6ssf307rs_l1r0000gn/T/pip-build-env-40gx9ofn/overlay/lib/python3.8/site-packages/setuptools/_distutils/dist.py", line 954, in run_commands
+          self.run_command(cmd)
+        File "/private/var/folders/n6/vswcft1n13s6ssf307rs_l1r0000gn/T/pip-build-env-40gx9ofn/overlay/lib/python3.8/site-packages/setuptools/dist.py", line 999, in run_command
+          super().run_command(command)
+        File "/private/var/folders/n6/vswcft1n13s6ssf307rs_l1r0000gn/T/pip-build-env-40gx9ofn/overlay/lib/python3.8/site-packages/setuptools/_distutils/dist.py", line 973, in run_command
+          cmd_obj.run()
+        File "/private/var/folders/n6/vswcft1n13s6ssf307rs_l1r0000gn/T/pip-build-env-40gx9ofn/overlay/lib/python3.8/site-packages/setuptools/command/egg_info.py", line 312, in run
+          self.find_sources()
+        File "/private/var/folders/n6/vswcft1n13s6ssf307rs_l1r0000gn/T/pip-build-env-40gx9ofn/overlay/lib/python3.8/site-packages/setuptools/command/egg_info.py", line 320, in find_sources
+          mm.run()
+        File "/private/var/folders/n6/vswcft1n13s6ssf307rs_l1r0000gn/T/pip-build-env-40gx9ofn/overlay/lib/python3.8/site-packages/setuptools/command/egg_info.py", line 541, in run
+          self.add_defaults()
+        File "/private/var/folders/n6/vswcft1n13s6ssf307rs_l1r0000gn/T/pip-build-env-40gx9ofn/overlay/lib/python3.8/site-packages/setuptools/command/egg_info.py", line 579, in add_defaults
+          sdist.add_defaults(self)
+        File "/private/var/folders/n6/vswcft1n13s6ssf307rs_l1r0000gn/T/pip-build-env-40gx9ofn/overlay/lib/python3.8/site-packages/setuptools/command/sdist.py", line 109, in add_defaults
+          super().add_defaults()
+        File "/private/var/folders/n6/vswcft1n13s6ssf307rs_l1r0000gn/T/pip-build-env-40gx9ofn/overlay/lib/python3.8/site-packages/setuptools/_distutils/command/sdist.py", line 238, in add_defaults
+          self._add_defaults_ext()
+        File "/private/var/folders/n6/vswcft1n13s6ssf307rs_l1r0000gn/T/pip-build-env-40gx9ofn/overlay/lib/python3.8/site-packages/setuptools/_distutils/command/sdist.py", line 323, in _add_defaults_ext
+          self.filelist.extend(build_ext.get_source_files())
+        File "<string>", line 204, in get_source_files
+        File "/private/var/folders/n6/vswcft1n13s6ssf307rs_l1r0000gn/T/pip-build-env-40gx9ofn/overlay/lib/python3.8/site-packages/setuptools/_distutils/cmd.py", line 107, in __getattr__
+          raise AttributeError(attr)
+      AttributeError: cython_sources
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+
+[notice] A new release of pip is available: 25.0.1 -> 26.1.2
+[notice] To update, run: pip install --upgrade pip
+error: subprocess-exited-with-error
+
+× Getting requirements to build wheel did not run successfully.
+│ exit code: 1
+╰─> See above for output.
+
+note: This error originates from a subprocess, and is likely not a problem with pip.
