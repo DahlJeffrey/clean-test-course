@@ -28,7 +28,7 @@ jobs:
         working-directory: backend
   _____  
   deploy:
-    needs: 
+    needs: build_and_test
     runs-on: ubuntu-latest
     defaults:
       run:
