@@ -28,7 +28,7 @@ describe('Test Order', () => {
     //Add a Test to verify that delivery fee shows up here
     //Act:
     //Setup the Mock API
-    setupMock();
+    setUpMock();
     //Call the page
     render(
       <OrderContext.Provider value={{ orderName, orderItems }}>
@@ -37,38 +37,30 @@ describe('Test Order', () => {
     );
     //Assert: replace the return true.
     await waitFor(() => {
-      return true;
+      expect(screen.getAllByText('$2.50')).toHaveLength(1);
     });
   });
 
   test('Test Update Delivery Fee', async () => {
-    //Modify the delivery distance and verify that the delivery fee is updated
-    //Act:
-    //Setup the Mock API
-    setupMock();
-    //Call the page
-    render(
-      <OrderContext.Provider value={{ orderName, orderItems }}>
-        <Order />
-      </OrderContext.Provider>
-    );
+    setUpMock();
 
-    //ACT
-    //Update the Delivery distance by choosing the 5 mile option from the drop down
-    userEvent.selectOptions(
-      // Find the select element, like a real user would.
-      screen.getByRole('combobox'),
-      // Find and select the 5 mile option, like a real user would.
-      screen.getByRole('option', { name: '5 miles' })
-    );
-    //Assert: replace the return true.
-    await waitFor(() => {
-      return true;
-    });
+  render(
+    <OrderContext.Provider value={{ orderName, orderItems }}>
+      <Order />
+    </OrderContext.Provider>
+  );
+
+  await userEvent.selectOptions(
+    screen.getByRole('combobox'),
+    screen.getByRole('option', { name: '5 miles' })
+  );
+
+  await waitFor(() => {
+    expect(screen.getAllByText('$5.00')).toHaveLength(1);
   });
 });
-
-const setupMock = () => {
+});
+const setUpMock = () => {
   //Mock API calls
   const mockGet = jest.spyOn(axios, 'get');
   mockGet.mockImplementation((url) => {
@@ -87,6 +79,42 @@ const setupMock = () => {
             data: 5.0,
           },
         });
+      case `${API_URL}/api/subtotal/test-fun`:
+        return Promise.resolve({
+          data: {
+            status: 'success',
+            data: 0,
+          },
+        });
+      case `${API_URL}/api/tax/test-fun/0`:
+        return Promise.resolve({
+          data: {
+            status: 'success',
+            data: 0,
+          },
+        });
+      case `${API_URL}/api/tax/test-fun/5`:
+        return Promise.resolve({
+          data: {
+            status: 'success',
+            data: 0,
+          },
+        });
+      case `${API_URL}/api/total/test-fun/0`:
+        return Promise.resolve({
+          data: {
+            status: 'success',
+            data: 0,
+          },
+        });
+      case `${API_URL}/api/total/test-fun/5`:
+        return Promise.resolve({
+          data: {
+            status: 'success',
+            data: 0,
+          },
+        });
+
       default:
         return Promise.resolve({
           data: {
